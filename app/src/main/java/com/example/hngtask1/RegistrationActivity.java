@@ -69,5 +69,14 @@ public class RegistrationActivity extends AppCompatActivity {
 
             }
         });
+
+        Button loginButton = findViewById(R.id.btn_login);
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent registerIntent = new Intent(RegistrationActivity.this, LoginActivity.class);
+                startActivity(registerIntent);
+            }
+        });
     }
 }
